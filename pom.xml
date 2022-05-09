@@ -13,6 +13,34 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>2.4.4</version>
+        </dependency>
+        <!--        this is the dependency that wrap up rest assured with additional serenity support-->
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-rest-assured</artifactId>
+            <version>2.4.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!--Junit 5 support for serenity -->
+        <dependency>
+            <groupId>io.github.fabianlinz</groupId>
+            <artifactId>serenity-junit5</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -50,5 +78,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
