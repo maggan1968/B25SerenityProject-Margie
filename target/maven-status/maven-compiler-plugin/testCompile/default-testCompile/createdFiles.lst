@@ -1,0 +1,7 @@
+utilities/SpartanUtil.class
+b25/spartan/admin/SpartanAdminGetTest.class
+utilities/ConfigReader.class
+utilities/SpartanNewBase.class
+b25/bookit/BookitEnvTest.class
+b25/spartan/PropertiesTest.class
+b25/spartan/editor/SpartanEditorPostTest.class
