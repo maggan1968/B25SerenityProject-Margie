@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: b25.spartan.editor.SpartanEditorPostTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.834 s - in b25.spartan.editor.SpartanEditorPostTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.748 s - in b25.spartan.editor.SpartanEditorPostTest

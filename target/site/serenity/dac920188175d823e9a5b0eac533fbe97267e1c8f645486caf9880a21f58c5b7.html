@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Editor","type":"feature","href":"dac920188175d823e9a5b0eac533fbe97267e1c8f645486caf9880a21f58c5b7.html","nodes":[{"text":"Spartan editor post test","type":"story","href":"0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 story\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Editor","type":"feature","href":"dac920188175d823e9a5b0eac533fbe97267e1c8f645486caf9880a21f58c5b7.html","nodes":[{"text":"Spartan editor post test","type":"story","href":"0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-ban ignored-icon \u0027 title\u003d\u0027IGNORED\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e11 scenarios\u003c/span\u003e"]}],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-ban ignored-icon \u0027 title\u003d\u0027IGNORED\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 story\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -224,7 +224,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-05-2022 13:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-05-2022 10:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -294,10 +294,10 @@
                                                 </div>
                                                 <script>
 
-                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                    var labels = ['91%', ' ', ' ', ' ', '9%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                     // Our series array that contains series objects or in this case series data arrays
 
-                                                    var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                    var series = [{meta: 'Passing tests (automated)', value: 10}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 1}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                     // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                     // as you saw in the previous example
@@ -340,8 +340,8 @@
                                                                     <a href="3a7e73defa53662713c294b9d792c0b1d28fb52e005bff4356bc9c894d5f122c.html"><i
                                                                                 class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">100%</td>
+                                                            <td class="automated-stats">10</td>
+                                                            <td class="automated-stats">91%</td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -351,11 +351,12 @@
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                <td class="aggregate-result-count"><i
-                                                                            class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                <td class="aggregate-result-count">
+                                                                    <a href="2a0a4e88f186e9391296c7eb492dabecba642ef0f7928eccc36feb6cb9e4874d.html"><i
+                                                                                class='fa fa-ban ignored-icon'></i>&nbsp;Ignored</a>
                                                                 </td>
-                                                            <td class="automated-stats">0</td>
-                                                            <td class="automated-stats"> </td>
+                                                            <td class="automated-stats">1</td>
+                                                            <td class="automated-stats">9%</td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -395,7 +396,7 @@
                                                         </tr>
                                                         <tr class="summary-stats">
                                                             <td class="aggregate-result-count">Total</td>
-                                                            <td class="automated-stats">1</td>
+                                                            <td class="automated-stats">11</td>
                                                             <td class="automated-stats"></td>
                                                         </tr>
                                                         </tbody>
@@ -417,11 +418,11 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>675ms</td>
-                                                            <td>0ms</td>
-                                                            <td>675ms</td>
-                                                            <td>675ms</td>
-                                                            <td>675ms</td>
+                                                            <td>1s</td>
+                                                            <td>2s</td>
+                                                            <td>76ms</td>
+                                                            <td>414ms</td>
+                                                            <td>177ms</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -461,11 +462,11 @@
             <td> 
                 
             </td>
-            <td>1</td>
+            <td>11</td>
             <td>0</td>
             <td>
-                <span class="status_icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
-                <span style="display:none">1</span>
+                <span class="status_icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
+                <span style="display:none">2</span>
             </td>
 
             <td width="165px">
@@ -474,100 +475,100 @@
 <table>
     <tr>
         <td width="40px" style="padding-top:4px;">
-            <div class="small" style="text-align:right;">100%</div>
+            <div class="small" style="text-align:right;">90.9%</div>
         </td>
         <td style="min-width:12.5em;">
             <div class="progress">
                 <div class="progress-bar" role="progressbar"
-                     style="width: 100%; background-color:#30cb23;"
-                     aria-valuenow="1"
+                     style="width: 90.909091%; background-color:#30cb23;"
+                     aria-valuenow="10"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
                      style="width: 0%; background-color:#A2C4EC;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
-                     style="width: 0%; background-color:darkgrey;"
-                     aria-valuenow="0"
+                     style="width: 9.090909%; background-color:darkgrey;"
+                     aria-valuenow="1"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
                      style="width: 0%; background-color:#EEE098;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
                      style="width: 0%; background-color:#f8001f;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
                      style="width: 0%; background-color:darkorange;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
                      style="width: 0%; background-color:fuchsia;"
                      aria-valuenow="0"
                      aria-valuemin="0"
-                     aria-valuemax="1"
-                     title="  - Total tests: 1
-  - Passing tests: 1 (100%)
+                     aria-valuemax="11"
+                     title="  - Total tests: 11
+  - Passing tests: 10 (90.9%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
-  - Ignored or skipped tests: 0 (0%)">
+  - Ignored or skipped tests: 1 (9.1%)">
                 </div>
             </div>
         </td>
@@ -601,16 +602,166 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result IGNORED">
                                                                         <td>
                                                                                 <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
                                                                         </td>
                                                                     <td>
                                                                             <a href="c05f79533983d06cadc19c3d039a3b7c6a6c178e6dae350180a46c51994e2d23.html">Editor should be able to POST</a>
                                                                     </td>
-                                                                    <td>9</td>
-                                                                    <td>13:22:52</td>
-                                                                    <td>675ms</td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:09</td>
+                                                                    <td>132ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a> <span
+                                                                                style="display:none">IGNORED</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="f499619ca1d9df74245e5a3c3af4a84ba005cfadf7d9f138eedc0a5fed8658a6.html">POST Spartan 1 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:09</td>
+                                                                    <td>106ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="6a3dc36c1e14757c0200eb6909ef8ffd936d30b3352a87d8dc813366cae47813.html">POST Spartan 2 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:09</td>
+                                                                    <td>159ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="81090b122ef6736882e2109c73e5b0924e6a74b7c5c748198ebb9d22682149ed.html">POST Spartan 3 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:09</td>
+                                                                    <td>202ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="60f8f5d0e9cd437ede748560e6fcf508a046227a3b798fe7c58c1da0b8aa9af8.html">POST Spartan 4 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:10</td>
+                                                                    <td>149ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="faaa7b7dcd1248a1a842b1069268a492f1d184a278940874ad298cdd78fd1202.html">POST Spartan 5 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:10</td>
+                                                                    <td>336ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="fbfff05ab13179c9b1fe71f869cc8f04bcb150d50ca8ca11c4f278e3801b1014.html">POST Spartan 6 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:10</td>
+                                                                    <td>414ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="87f2d921053ef4a4ff76925570ef0dae57f51567cc70c0df5f9109a0ecff35bb.html">POST Spartan 7 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:11</td>
+                                                                    <td>139ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="d28711f7e040964e2f8c58184fe9eac66a3951f196289a6834f4e3c12adca3ea.html">POST Spartan 8 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:11</td>
+                                                                    <td>113ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="1d9486c28883550e868d1b8b9fc6768ad0ac1189b7b6aa2619e038e4ff0ff900.html">POST Spartan 9 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:11</td>
+                                                                    <td>122ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="0e113e65988b39b16c80de6bc6345e1e6af8c9191db9f7b36c9ab66a0451a079.html">Spartan editor post test</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="c0b6b55f8bb580717a83dbc70376dc864c1e0b4e60c244912f026bd424f697cf.html">POST Spartan 10 - name</a>
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                    <td>10:33:11</td>
+                                                                    <td>076ms</td>
                                                                     <td>
                                                                             <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
                                                                                 style="display:none">SUCCESS</span>

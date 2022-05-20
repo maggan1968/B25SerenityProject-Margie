@@ -2,6 +2,8 @@ package b25.spartan.editor;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import utilities.SpartanNewBase;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -22,7 +24,7 @@ import static org.hamcrest.Matchers.*;
 @SerenityTest
 public class SpartanEditorPostTest extends SpartanNewBase {
 
-
+    @Disabled
     @DisplayName("Editor should be able to POST")
     @Test
     public void postSpartanAsEditor(){
@@ -72,6 +74,18 @@ public class SpartanEditorPostTest extends SpartanNewBase {
                 vRes -> vRes.header("Location", endsWith(id)));
 
     }
+    /*
+     so if we want to provide custom test name for each execution
+        we can use name = "some message" structure. if we want to include index
+        we can use {index} and for using parameter values we use order of parameter index
+        just like {0} - name {1} -gender {2} - phone.
+     */
 
-
+    @ParameterizedTest(name = "POST Spartan {index} - name: {0}")
+    @CsvFileSource(resources = "/SpartanDataPOST.csv",numLinesToSkip = 1)
+    public void postSpartanWithCsvFile(String nameArg,String gender,long phone) {
+        System.out.println("nameArg = " + nameArg);
+        System.out.println("gender = " + gender);
+        System.out.println("phone = " + phone);
+    }
 }
